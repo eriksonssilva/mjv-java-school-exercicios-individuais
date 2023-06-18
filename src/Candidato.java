@@ -5,7 +5,6 @@ public class Candidato {
     private String nome;
     private String cpf;
     private Date dataNascimento;
-    //private Candidato.Sexo Sexo;
     private Sexo sexo;
     private String logradouro;
     private String numero;
