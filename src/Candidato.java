@@ -5,14 +5,8 @@ public class Candidato {
     private String nome;
     private String cpf;
     private Date dataNascimento;
-    private Candidato.Sexo Sexo;
-
-    public enum Sexo {
-
-        MASC, FEM, NB
-
-    }
-
+    //private Candidato.Sexo Sexo;
+    private Sexo sexo;
     private String logradouro;
     private String numero;
     private String complemento;
@@ -56,11 +50,11 @@ public class Candidato {
     }
 
     public Sexo getSexo() {
-        return this.Sexo;
+        return this.sexo;
     }
 
     public void setSexo(Sexo sexo) {
-        this.Sexo = sexo;
+        this.sexo = sexo;
     }
 
     public String getLogradouro() {
@@ -135,7 +129,7 @@ public class Candidato {
         this.celular = celular;
     }
 
-    public boolean getCelularWhats() {
+    public boolean isCelularWhats() {
         return celularWhats;
     }
 
@@ -167,7 +161,7 @@ public class Candidato {
         this.salario = salario;
     }
 
-    public boolean empregoAtual() {
+    public boolean isEmpregoAtual() {
         return empregoAtual;
     }
 
@@ -208,7 +202,7 @@ public class Candidato {
         this.nome = nome;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
-        this.Sexo = sexo;
+        this.sexo = sexo;
         this.logradouro = logradouro;
         this.numero = numero;
         this.complemento = complemento;
